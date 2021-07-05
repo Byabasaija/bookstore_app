@@ -1,3 +1,8 @@
-// import { combineReducers } from 'redux';
+import { combineReducers } from 'redux';
+import bookReducer from './books';
 
-// // const rootReducer = Redux.combineReducers({ auth: authReducer, count: counterReducer });
+const rootReducer = combineReducers({
+  bookReducer,
+});
+
+export default rootReducer;
