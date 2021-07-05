@@ -30,9 +30,17 @@ To get a local copy up and running follow these simple example steps.
 
 👤 **Saima**
 
-- GitHub: [@saimaAnis21](https://github.com/saimaAnis21)
-- Twitter: [@SheTALKS](https://twitter.com/SheTALKS6)
-- LinkedIn: [Saima Anis](https://www.linkedin.com/in/saima-anis-3a07921b2/)
+**GitHub** [@saimaAnis21](https://github.com/saimaAnis21)
+**Twitter** [@SheTALKS](https://twitter.com/SheTALKS6)
+**LinkedIn** [Saima Anis](https://www.linkedin.com/in/saima-anis-3a07921b2/)
+
+👤 **Pascal Byabasaija**
+
+**Github** [Byabasaija](https://github.com/Byabasaija)
+
+**Linkedin** [Pascal Byabasaija](https://linkedin/in/pascal-byabasaija)
+
+**Twitter** [Pascal](https://twitter.com/byabashaijapoet)
 
 ## Acknowledgements
 - Microverse
