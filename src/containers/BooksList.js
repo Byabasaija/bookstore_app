@@ -2,7 +2,7 @@ import { connect } from 'react-redux';
 import PropTypes from 'prop-types';
 import Book from '../components/Book';
 
-function BookList(props) {
+const BookList = (props) => {
   const { books } = props;
   return (
     <table>
@@ -13,11 +13,9 @@ function BookList(props) {
 
     </table>
   );
-}
+};
 
-const mapStateToProps = (state) => ({
-  books: [...state],
-});
+const mapStateToProps = (state) => ({ books: [...state.books] });
 
 BookList.propTypes = {
   books: PropTypes.isRequired,
