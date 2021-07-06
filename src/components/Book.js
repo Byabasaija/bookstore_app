@@ -12,7 +12,11 @@ function Book(props) {
 }
 
 Book.propTypes = {
-  book: PropTypes.isRequired,
+  book: PropTypes.objectOf(PropTypes.string),
+
 };
 
+Book.defaultProps = {
+  book: {},
+};
 export default Book;

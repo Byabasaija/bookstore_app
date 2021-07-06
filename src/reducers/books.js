@@ -1,25 +1,24 @@
-const CREATE_BOOK = 'CREATE_BOOK';
-const REMOVE_BOOK = 'REMOVE_BOOK';
-
 const initialState = {
   books: [{
-    id: Math.random(),
+    id: Math.random().toString(),
     title: 'First Book',
     cat: 'Action',
   },
   {
-    id: Math.random(),
+    id: Math.random().toString(),
     title: 'Second Book',
     cat: 'Biography',
   },
   {
-    id: Math.random(),
+    id: Math.random().toString(),
     title: 'Third Book',
     cat: 'History',
   },
 
   ],
 };
+const CREATE_BOOK = 'CREATE_BOOK';
+const REMOVE_BOOK = 'REMOVE_BOOK';
 
 const bookReducer = (State = initialState, action) => {
   switch (action.type) {
