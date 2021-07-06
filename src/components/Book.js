@@ -6,7 +6,7 @@ function Book(props) {
     <tr>
       <td>{book.id}</td>
       <td>{book.title}</td>
-      <td>{book.cat}</td>
+      <td>{book.category}</td>
     </tr>
   );
 }

@@ -2,17 +2,17 @@ const initialState = {
   books: [{
     id: Math.random().toString(),
     title: 'First Book',
-    cat: 'Action',
+    category: 'Action',
   },
   {
     id: Math.random().toString(),
     title: 'Second Book',
-    cat: 'Biography',
+    category: 'Biography',
   },
   {
     id: Math.random().toString(),
     title: 'Third Book',
-    cat: 'History',
+    category: 'History',
   },
 
   ],
