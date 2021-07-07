@@ -2,6 +2,7 @@ import { connect } from 'react-redux';
 import PropTypes from 'prop-types';
 import Book from '../components/Book';
 import { bookRemoveAction } from '../actions/index';
+import CategoryFilter from '../components/CategoryFilter';
 
 const BookList = (props) => {
   const { books, removeBook } = props;
@@ -11,12 +12,23 @@ const BookList = (props) => {
   };
 
   return (
-    <table>
-      <th>Book ID</th>
-      <th>Title</th>
-      <th>Category</th>
-      { books.map((abook) => <Book book={abook} key={abook.id} removeHandler={handleRemoveBook} />)}
-    </table>
+
+    <div>
+
+      <CategoryFilter />
+      <table>
+        <th>Book ID</th>
+        <th>Title</th>
+        <th>Category</th>
+        { books.map((abook) => (
+          <Book
+            book={abook}
+            key={abook.id}
+            removeHandler={handleRemoveBook}
+          />
+        ))}
+      </table>
+    </div>
   );
 };
 
