@@ -2,22 +2,33 @@ import { connect } from 'react-redux';
 import PropTypes from 'prop-types';
 import Book from '../components/Book';
 import { bookRemoveAction } from '../actions/index';
+import CategoryFilter from '../components/CategoryFilter';
 
 const BookList = (props) => {
-  const { books } = props;
+  const { books, removeBook } = props;
 
   const handleRemoveBook = (book) => {
-    const { removeBook } = props;
     removeBook(book);
   };
 
   return (
-    <table>
-      <th>Book ID</th>
-      <th>Title</th>
-      <th>Category</th>
-      { books.map((abook) => <Book book={abook} key={abook.id} removeHandler={handleRemoveBook} />)}
-    </table>
+
+    <div>
+
+      <CategoryFilter />
+      <table>
+        <th>Book ID</th>
+        <th>Title</th>
+        <th>Category</th>
+        { books.map((abook) => (
+          <Book
+            book={abook}
+            key={abook.id}
+            removeHandler={handleRemoveBook}
+          />
+        ))}
+      </table>
+    </div>
   );
 };
 
