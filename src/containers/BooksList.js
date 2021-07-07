@@ -4,10 +4,9 @@ import Book from '../components/Book';
 import { bookRemoveAction } from '../actions/index';
 
 const BookList = (props) => {
-  const { books } = props;
+  const { books, removeBook } = props;
 
   const handleRemoveBook = (book) => {
-    const { removeBook } = props;
     removeBook(book);
   };
 
