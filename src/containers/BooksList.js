@@ -15,13 +15,12 @@ const BookList = (props) => {
   );
 };
 const mapStateToProps = (state) => ({
-  books: state.bookReducer.books,
+  books: state.books,
 });
 BookList.propTypes = {
   books: PropTypes.arrayOf(PropTypes.object),
 
 };
-
 BookList.defaultProps = {
   books: [],
 };
