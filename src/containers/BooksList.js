@@ -30,13 +30,17 @@ const BookList = (props) => {
         <th>Book ID</th>
         <th>Title</th>
         <th>Category</th>
-        { books.map((abook) => (
-          <Book
-            book={abook}
-            key={abook.id}
-            removeHandler={handleRemoveBook}
-          />
-        ))}
+        {
+            books.filter((book) => book.category === filter1 || filter1 === 'All' || filter1 === '').map((abook) => (
+              <Book
+                book={abook}
+                key={abook.id}
+                removeHandler={handleRemoveBook}
+                filter={filter1}
+              />
+            ))
+
+         }
       </table>
     </div>
   );
@@ -44,7 +48,7 @@ const BookList = (props) => {
 
 const mapStateToProps = (state) => ({
   books: state.bookReducer.books,
-  filter1: state.bookReducer.filter,
+  filter1: state.filterReducer.filter,
 });
 
 const mapDispatchToProps = (dispatch) => ({

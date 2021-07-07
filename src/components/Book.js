@@ -4,6 +4,7 @@ function Book(props) {
   const { book, removeHandler } = props;
 
   return (
+
     <tr>
       <td>{book.id}</td>
       <td>{book.title}</td>
