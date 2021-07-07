@@ -6,7 +6,7 @@ import { composeWithDevTools } from 'redux-devtools-extension';
 import App from './components/App';
 import rootReducer from './reducers';
 
-const store = createStore(rootReducer, composeWithDevTools());
+const store = createStore(rootReducer, composeWithDevTools);
 
 ReactDOM.render(
   <React.StrictMode>
