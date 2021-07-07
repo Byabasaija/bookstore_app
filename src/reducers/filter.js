@@ -1,9 +1,11 @@
+import { initialState } from './books';
+
 const CHANGE_FILTER = 'CHANGE_FILTER';
 
-const filterReducer = (State = 'ALL', action) => {
+const filterReducer = (State = initialState, action) => {
   switch (action.type) {
     case CHANGE_FILTER:
-      return action.payload;
+      return { filter: action.payload };
     default:
       return State;
   }

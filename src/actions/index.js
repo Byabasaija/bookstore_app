@@ -12,9 +12,9 @@ const bookRemoveAction = (book) => ({
   payload: book,
 });
 
-const changeFilter = (filter) => ({
+const changeFilterAction = (filter) => ({
   type: CHANGE_FILTER,
   payload: filter,
 });
 
-export { bookCreateAction, bookRemoveAction, changeFilter };
+export { bookCreateAction, bookRemoveAction, changeFilterAction };

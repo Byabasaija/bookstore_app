@@ -16,7 +16,7 @@ const initialState = {
   },
 
   ],
-
+  filter: '',
 };
 
 const CREATE_BOOK = 'CREATE_BOOK';
@@ -35,4 +35,4 @@ const bookReducer = (state = initialState, action) => {
   }
 };
 
-export default bookReducer;
+export { bookReducer, initialState };
