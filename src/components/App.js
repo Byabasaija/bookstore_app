@@ -10,6 +10,7 @@ function App() {
         <h1 className="Bookstore-CMS d-inline">Bookstore CMS</h1>
         <span className="BOOKS">BOOKS</span>
         <span className="CATEGORIES">CATEGORIES</span>
+        <i className="fas fa-user icon" />
       </div>
       <BooksList />
       <BooksForm />
