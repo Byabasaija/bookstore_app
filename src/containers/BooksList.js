@@ -3,6 +3,7 @@ import PropTypes from 'prop-types';
 import Book from '../components/Book';
 import { bookRemoveAction, changeFilterAction } from '../actions/index';
 import CategoryFilter from '../components/CategoryFilter';
+import '../styles/styles.css';
 
 const BookList = (props) => {
   const {

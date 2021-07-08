@@ -1,5 +1,5 @@
 import PropTypes from 'prop-types';
-import './Book.css';
+import '../styles/styles.css';
 
 function Book(props) {
   const { book, removeHandler } = props;

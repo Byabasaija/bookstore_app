@@ -1,3 +1,55 @@
+.Header-bg {
+    width: 87.5rem;
+    height: 5.938rem;
+    margin: 0 0 2.375rem;
+    padding: 1.438rem 6.188rem 1.688rem 6.25rem;
+    background-color: #ffffff;
+  }
+
+  .Bookstore-CMS {
+    width: 15rem;
+    height: 2.313rem;
+    margin: 0.375rem 2.938rem 0.125rem 0;
+    font-family: Montserrat;
+    font-size: 1.875rem;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    color: #0290ff;
+  }
+
+  .BOOKS {
+    width: 3.688rem;
+    height: 1rem;
+    margin: 1.125rem 2.563rem 0.688rem 0;
+    font-family: Montserrat;
+    font-size: 0.813rem;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: 1.9px;
+    color: #121212;
+  }
+
+  .CATEGORIES {
+    width: 6.563rem;
+    height: 1rem;
+    margin: 1.125rem 41.5rem 0.688rem 2.563rem;
+    opacity: 0.5;
+    font-family: Montserrat;
+    font-size: 0.813rem;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: 1.9px;
+    color: #121212;
+  }
+
+
 
 .Book-Panel {
 
@@ -199,6 +251,7 @@
 
   .btn-remove{
       background-color: white;
+      border: none;
   }
  
 .progress {
@@ -275,7 +328,7 @@
     border-radius: 50%;
     background: #000;
     font-size: 24px;
-    color: #fff;
+    color: #fff;x
     line-height: 135px;
     text-align: center;
     position: absolute;
@@ -310,31 +363,66 @@
     }
 
     100% {
-        -webkit-transform: rotate(180deg);
-        transform: rotate(180deg)
+        -webkit-transform: rotate(160deg);
+        transform: rotate(160deg)
     }
 }
 
-@keyframes loading-2 {
-    0% {
-        -webkit-transform: rotate(0deg);
-        transform: rotate(0deg)
-    }
+.title {
+    width: 10.875rem;
+    height: 1.5rem;
+    margin: 1.813rem 32.75rem 1.188rem 0;
+    font-family: Montserrat;
+    font-size: 1.25rem;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: -0.18px;
+    color: #888888;
+  }
 
-    100% {
-        -webkit-transform: rotate(144deg);
-        transform: rotate(144deg)
-    }
-}
+  .Form-Panel {
+    width: 41.5rem;
+    height: 2.813rem;
+    margin: 1.188rem 2.125rem 0 0;
+    padding: 0.813rem 35.688rem 0.813rem 1.063rem;
+    border-radius: 4px;
+    border: solid 1px #e8e8e8;
+    background-color: #fff;
+  }
 
-@keyframes loading-3 {
-    0% {
-        -webkit-transform: rotate(0deg);
-        transform: rotate(0deg)
-    }
+  .panel-bg {
+    width: 87.5rem;
+    height: 68.563rem;
+    margin: 0 2.5rem 4.063rem 0;
+    padding: 0 0 49.625rem;
+    border-radius: 4px;
+    box-shadow: 0 0 60px 0 var(--black-5);
+    background-color: #fafafa;
+  }
 
-    100% {
-        -webkit-transform: rotate(135deg);
-        transform: rotate(135deg)
-    }
-}
+  .add-book-btn {
+    border: none;
+    width: 11.5rem;
+    height: 2.813rem;
+    margin: 1.188rem 0 0 2.125rem;
+    padding: 0.801rem 1.188rem 0.886rem 1.375rem;
+    border-radius: 3px;
+    background-color: #0290ff;
+  }
+
+  .ADD-BOOK {
+    width: 8.938rem;
+    height: 1.125rem;
+    font-family: RobotoSlab;
+    font-size: 0.813rem;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: 0.5px;
+    text-align: center;
+    color: #ffffff;
+  }
+
