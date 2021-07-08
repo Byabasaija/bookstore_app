@@ -1,6 +1,209 @@
+
+.Book-Panel {
+
+    width: 75rem;
+  
+    height: 10.625rem;
+  
+    margin: 2.313rem 6.25rem 0;
+  
+    padding: 2rem 9.188rem 1.625rem 1.688rem;
+  
+    border-radius: 4px;
+  
+    border: solid 1px #e8e8e8;
+  
+    background-color: white;
+  
+  }
+
+  .category {
+
+    width: 3.063rem;
+  
+    height: 1.125rem;
+  
+    margin: 0 2.438rem 0 0;
+  
+    opacity: 0.5;
+  
+    font-family: Montserrat;
+  
+    font-size: 0.875rem;
+  
+    font-weight: bold;
+  
+    font-stretch: normal;
+  
+    font-style: normal;
+  
+    line-height: normal;
+  
+    letter-spacing: normal;
+  
+    color: var(--black-two);
+  
+  }
+
+  .title {
+
+    width: 12.313rem;
+  
+    height: 1.813rem;
+  
+    margin: 0.188rem 20.188rem 0 0;
+  
+    font-family: RobotoSlab;
+  
+    font-size: 1.375rem;
+  
+    font-weight: bold;
+  
+    font-stretch: normal;
+  
+    font-style: normal;
+  
+    line-height: normal;
+  
+    letter-spacing: -0.2px;
+  
+    color: #121212;
+     
+  }
+
+  .Update-progress {
+
+    width: 8.938rem;
+  
+    height: 1.125rem;
+  
+    font-family: RobotoSlab;
+  
+    font-size: 0.813rem;
+  
+    font-weight: 300;
+  
+    font-stretch: normal;
+  
+    font-style: normal;
+  
+    line-height: normal;
+  
+    letter-spacing: 0.5px;
+  
+    text-align: center;
+  
+    color: #ffffff;
+
+    text-transform: uppercase;
+  
+  }
+
+  .rect-update {
+
+    width: 12rem;
+  
+    height: 2.063rem;
+  
+    margin: auto;
+  
+    padding: 0.438rem 1.188rem 0.5rem 1.375rem;
+  
+    border-radius: 3px;
+  
+    background-color: #0290ff;;
+  
+  }
+
+  .Percent-Complete {
+
+    width: 4.25rem;
+  
+    height: 2.438rem;
+  
+    margin: 0.063rem 5.75rem 0 0.688rem;
+  
+    font-family: Montserrat;
+  
+    font-size: 2rem;
+  
+    font-weight: normal;
+  
+    font-stretch: normal;
+  
+    font-style: normal;
+  
+    line-height: normal;
+  
+    letter-spacing: normal;
+  
+    color: #121212;
+  
+  }
+
+  .Completed {
+
+    width: 5rem;
+  
+    height: 1.125rem;
+  
+    margin: 0.438rem 4.938rem 0.75rem 0.75rem;
+  
+    opacity: 0.5;
+  
+    font-family: Montserrat;
+  
+    font-size: 0.875rem;
+  
+    font-weight: normal;
+  
+    font-stretch: normal;
+  
+    font-style: normal;
+  
+    line-height: normal;
+  
+    letter-spacing: normal;
+  
+    color:#121212;
+  
+  }
+
+  .com-rem-ed{
+
+    width: 4.563rem;
+  
+    height: 1.188rem;
+  
+    margin: 0.188rem 0.938rem 0.125rem 0;
+  
+    font-family: RobotoSlab;
+  
+    font-size: 0.875rem;
+  
+    font-weight: 300;
+  
+    font-stretch: normal;
+  
+    font-style: normal;
+  
+    line-height: normal;
+  
+    letter-spacing: normal;
+  
+    color: #4386bf;
+
+    text-transform: capitalize;
+  
+  }
+
+  .btn-remove{
+      background-color: white;
+  }
+ 
 .progress {
-    width: 150px;
-    height: 150px !important;
+    width: 80px;
+    height: 80px !important;
     float: left;
     line-height: 150px;
     background: none;
@@ -14,7 +217,7 @@
     width: 100%;
     height: 100%;
     border-radius: 50%;
-    border: 12px solid #fff;
+    border: 5px solid #e8e8e8;
     position: absolute;
     top: 0;
     left: 0
@@ -37,7 +240,7 @@
     width: 100%;
     height: 100%;
     background: none;
-    border-width: 12px;
+    border-width: 5px;
     border-style: solid;
     position: absolute;
     top: 0
@@ -66,7 +269,7 @@
     animation: loading-1 1.8s linear forwards
 }
 
-.progress .progress-value {
+/* .progress .progress-value {
     width: 90%;
     height: 90%;
     border-radius: 50%;
@@ -78,17 +281,17 @@
     position: absolute;
     top: 5%;
     left: 5%
-}
+} */
 
 .progress.blue .progress-bar {
-    border-color: #049dff
+    border-color: #049dff    
 }
 
 .progress.blue .progress-left .progress-bar {
     animation: loading-2 1.5s linear forwards 1.8s
 }
 
-.progress.yellow .progress-bar {
+/* .progress.yellow .progress-bar {
     border-color: #fdba04
 }
 
@@ -98,7 +301,7 @@
 
 .progress.yellow .progress-left .progress-bar {
     animation: none
-}
+} */
 
 @keyframes loading-1 {
     0% {

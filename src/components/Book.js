@@ -6,14 +6,25 @@ function Book(props) {
 
   return (
 
-    <div className="d-flex">
+    <div className="d-flex Book-Panel mx-auto">
       <div>
-        {book.category}
-        {book.title}
+        <h3 className="category">
+          {' '}
+          {book.category}
+          {' '}
+        </h3>
+        <h1 className="title">
+          {book.title}
+        </h1>
+        <div>
+          <span className="com-rem-ed">comments</span>
+          <button type="submit" onClick={() => removeHandler(book)} className="com-rem-ed btn-remove">Remove</button>
+          <span className="com-rem-ed">edit</span>
+        </div>
       </div>
 
-      <div className="row d-flex justify-content-center mt-100">
-        <div className="col-md-6">
+      <div className="d-flex justify-content-center ">
+        <div className="">
           <div className="progress blue">
             {' '}
             <span className="progress-left">
@@ -27,13 +38,20 @@ function Book(props) {
               <span className="progress-bar" />
               {' '}
             </span>
-            <div className="progress-value">90%</div>
+            {/* <div className="progress-value">90%</div> */}
           </div>
 
         </div>
       </div>
 
-      <button type="submit" onClick={() => removeHandler(book)} className="btn btn-primary">Remove</button>
+      <div>
+        <div className="Percent-Complete">64%</div>
+        <div className="Completed">completed</div>
+      </div>
+
+      <div className="rect-update">
+        <span className="Update-progress">update progress</span>
+      </div>
 
     </div>
 
