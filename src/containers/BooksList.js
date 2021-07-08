@@ -23,10 +23,6 @@ const BookList = (props) => {
     <div>
 
       <CategoryFilter filterChange={handleFilterChange} />
-      <div>
-        State filter:
-        {filter1}
-      </div>
 
       <div className="d-flex flex-column">
         {
