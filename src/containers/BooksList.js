@@ -26,10 +26,8 @@ const BookList = (props) => {
         State filter:
         {filter1}
       </div>
-      <table>
-        <th>Book ID</th>
-        <th>Title</th>
-        <th>Category</th>
+
+      <div className="d-flex flex-column">
         {
             books.filter((book) => book.category === filter1 || filter1 === 'All' || filter1 === '').map((abook) => (
               <Book
@@ -41,7 +39,8 @@ const BookList = (props) => {
             ))
 
          }
-      </table>
+
+      </div>
     </div>
   );
 };
