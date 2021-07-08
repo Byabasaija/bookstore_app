@@ -2,6 +2,7 @@ import React from 'react';
 import { connect } from 'react-redux';
 import PropTypes from 'prop-types';
 import { bookCreateAction } from '../actions/index';
+import '../styles/styles.css';
 
 class BooksForm extends React.Component {
   constructor(props) {
@@ -43,22 +44,26 @@ class BooksForm extends React.Component {
 
   render() {
     const categories = ['Action', 'Biography', 'History', 'Horror', 'Kids', 'Learning', 'Sci-Fi'];
-    const { title, category } = this.state;
+    const { title } = this.state;
     return (
 
       <div>
-        <form>
-          <input onChange={(e) => this.handleChange(e)} name="title" value={title} />
-          <select onChange={(e) => this.handleChange(e)} name="category">
-            {categories.map((cat) => (
-              <option key={cat} value={cat}>{cat}</option>
-            ))}
-            ;
-          </select>
-          <div>{category}</div>
-          <button type="submit" onClick={(e) => this.handleSubmit(e)}> Submit</button>
-        </form>
+        <div className="mx-auto Book-form-Panel">
+          <h1 className="title">ADD BOOK</h1>
+          <form>
+            <input onChange={(e) => this.handleChange(e)} name="title" value={title} className=" Form-Panel w-50 mr-20" placeholder="Book title" />
+            <select onChange={(e) => this.handleChange(e)} name="category" className="Form-Panel w-25 ">
+              {categories.map((cat) => (
+                <option key={cat} value={cat}>{cat}</option>
+              ))}
+              ;
+            </select>
+            <button type="submit" onClick={(e) => this.handleSubmit(e)} className="add-book-btn">
+              <span className="ADD-BOOK">ADD BOOK</span>
+            </button>
+          </form>
 
+        </div>
       </div>
     );
   }

@@ -3,6 +3,7 @@ import PropTypes from 'prop-types';
 import Book from '../components/Book';
 import { bookRemoveAction, changeFilterAction } from '../actions/index';
 import CategoryFilter from '../components/CategoryFilter';
+import '../styles/styles.css';
 
 const BookList = (props) => {
   const {
@@ -22,14 +23,8 @@ const BookList = (props) => {
     <div>
 
       <CategoryFilter filterChange={handleFilterChange} />
-      <div>
-        State filter:
-        {filter1}
-      </div>
-      <table>
-        <th>Book ID</th>
-        <th>Title</th>
-        <th>Category</th>
+
+      <div className="d-flex flex-column">
         {
             books.filter((book) => book.category === filter1 || filter1 === 'All' || filter1 === '').map((abook) => (
               <Book
@@ -41,7 +36,8 @@ const BookList = (props) => {
             ))
 
          }
-      </table>
+
+      </div>
     </div>
   );
 };

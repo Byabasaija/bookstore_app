@@ -5,12 +5,15 @@ const CategoryFilter = (props) => {
   const { filterChange } = props;
 
   return (
-    <select onChange={(e) => filterChange(e.target.value)}>
-      {categories.map((cat) => (
-        <option key={cat} value={cat}>{cat}</option>
-      ))}
-      ;
-    </select>
+    <div className="mx-auto FILTER-Panel">
+      <select onChange={(e) => filterChange(e.target.value)} className="Form-Panel w-25 ">
+        {categories.map((cat) => (
+          <option key={cat} value={cat}>{cat}</option>
+        ))}
+        ;
+      </select>
+    </div>
+
   );
 };
 
