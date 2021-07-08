@@ -9,13 +9,12 @@ function Book(props) {
     <div className="d-flex Book-Panel mx-auto">
       <div>
         <h3 className="category">
-          {' '}
           {book.category}
-          {' '}
         </h3>
-        <h1 className="title">
+        <h1 className="book-title">
           {book.title}
         </h1>
+        <h4 className="com-rem-ed">Author</h4>
         <div>
           <span className="com-rem-ed">comments</span>
           <button type="submit" onClick={() => removeHandler(book)} className="com-rem-ed btn-remove">Remove</button>
@@ -26,19 +25,12 @@ function Book(props) {
       <div className="d-flex justify-content-center ">
         <div className="">
           <div className="progress blue">
-            {' '}
             <span className="progress-left">
-              {' '}
               <span className="progress-bar" />
-              {' '}
             </span>
-            {' '}
             <span className="progress-right">
-              {' '}
               <span className="progress-bar" />
-              {' '}
             </span>
-            {/* <div className="progress-value">90%</div> */}
           </div>
 
         </div>

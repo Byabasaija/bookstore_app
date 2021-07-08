@@ -48,10 +48,10 @@ class BooksForm extends React.Component {
     return (
 
       <div>
-        <div className="mx-auto Book-Panel">
+        <div className="mx-auto Book-form-Panel">
           <h1 className="title">ADD BOOK</h1>
           <form>
-            <input onChange={(e) => this.handleChange(e)} name="title" value={title} className="book-title Form-Panel w-50 mr-20" placeholder="Book title" />
+            <input onChange={(e) => this.handleChange(e)} name="title" value={title} className=" Form-Panel w-50 mr-20" placeholder="Book title" />
             <select onChange={(e) => this.handleChange(e)} name="category" className="Form-Panel w-25 ">
               {categories.map((cat) => (
                 <option key={cat} value={cat}>{cat}</option>
